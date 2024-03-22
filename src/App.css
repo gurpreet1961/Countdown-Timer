@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to top right, #9f7afe, #7fc7fe);
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.App {
+	text-align: center;
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	color: #7b1fa2;
+}
+
+h2 {
+	color: #333;
+}
+
+input[type="datetime-local"] {
+	width: 75% !important;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+button {
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 5px;
+	background-color: #7b1fa2;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #4a148c;
+}
+
+.countdown-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+	row-gap: 10px;
+}
+
+.card {
+	width: 100px;
+	background: linear-gradient(to top right, #d727ff, #3ab8ff);
+
+	color: white;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+	.App {
+		padding: 15px;
+	}
+
+	input[type="datetime-local"] {
+		max-width: 250px;
+	}
+}
+
+@media (max-width: 576px) {
+	.App {
+		padding: 10px;
+	}
+
+	input[type="datetime-local"] {
+		max-width: 200px;
+	}
+
+	.card {
+		padding: 8px;
+		margin: 0 3px;
+	}
+}
